@@ -25,7 +25,7 @@ var exec = require('cordova/exec');
 var echo = {};
 
 echo.echo = function(successCallback, errorCallback) {
-    exec(successCallback, errorCallback, "Echo", "echo", []);
+    exec(successCallback, errorCallback, "Echo", "echo", ["echo"]);
 };
 
 module.exports = echo;
